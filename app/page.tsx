@@ -4,7 +4,7 @@ export default async function Home() {
   const h = await headers();
   const email = h.get("x-user-email") || "unknown";
   const appName = process.env.APP_NAME || "test-jrpj";
-  const branchName = process.env.BRANCH_NAME || "main";
+  const branchName = process.env.BRANCH_NAME || "feature-theme";
 
   return (
     <div className="container">
