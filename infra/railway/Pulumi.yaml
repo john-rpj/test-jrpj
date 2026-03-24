@@ -1,0 +1,5 @@
+name: test-jrpj-railway
+runtime:
+  name: python
+  options:
+    toolchain: uv

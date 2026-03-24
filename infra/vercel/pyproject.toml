@@ -1,0 +1,22 @@
+[project]
+name = "test-jrpj-vercel"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "pulumi>=3.0",
+    "pulumi-cloudflare>=5.0",
+    "pulumiverse-vercel>=1.0",
+    "richmond-shared",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.24",
+]
+
+[tool.uv.sources]
+richmond-shared = { path = "../shared" }
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"

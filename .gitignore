@@ -1,0 +1,16 @@
+# Pulumi
+Pulumi.*.yaml
+.venv/
+
+# Node
+node_modules/
+.next/
+
+# Python
+__pycache__/
+
+# OS
+.DS_Store
+
+# Env
+.env.local
